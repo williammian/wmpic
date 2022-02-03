@@ -1,0 +1,10 @@
+Necessário fazer um ajuste na API, é preciso entrar no package.json dela e apagar a linha do sqlite3 antes de instalar as dependências.
+Depois, pode rodar npm install sqlite3 e npm install.
+
+
+Para rodar utilizar
+npm start
+
+
+Teste
+http://localhost:3000/flavio/photos
