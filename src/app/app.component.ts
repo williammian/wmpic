@@ -8,13 +8,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  photos: Object[] = [];
+  photos: any[] = [];
 
   constructor(photoService: PhotoService) {
 
     photoService
       .listFromUser('flavio')
-      .subscribe(photos => this.photos = photos);
+      .subscribe(photos => {
+        this.photos = photos
+      });
 
   }
 
