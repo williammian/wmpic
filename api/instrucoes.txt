@@ -8,3 +8,4 @@ npm start
 
 Teste
 http://localhost:3000/flavio/photos
+http://localhost:3000/almeida/photos
