@@ -6,6 +6,10 @@ Para rodar utilizar
 npm start
 
 
-Teste
+Teste API
 http://localhost:3000/flavio/photos
 http://localhost:3000/almeida/photos
+
+
+Teste UI
+http://localhost:4200/user/flavio
