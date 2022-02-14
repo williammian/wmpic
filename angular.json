@@ -120,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "wmpic"
+    }
+  },
+  "defaultProject": "wmpic",
+  "cli": {
+    "analytics": false
+  }
 }
