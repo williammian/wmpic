@@ -17,3 +17,13 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6ImZsYXZpbyIsImVtYWlsIjo
 }.
 [signature]
 
+
+1) O token é gerado no padrão JWT (J*son *Web Token)
+
+2) Um dos algoritmos de criptografia usado em sua assinatura é o HMAC SHA256 (HS256)
+
+3) O token pode ser decodificado
+
+É utilizada uma frase secreta para gerar e criptografar o token.
+Então é possível descriptografá-lo, mas para criptografá-lo novamente e ele ser um token válido, é necessário saber a frase secreta.
+
