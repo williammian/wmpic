@@ -27,3 +27,9 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6ImZsYXZpbyIsImVtYWlsIjo
 É utilizada uma frase secreta para gerar e criptografar o token.
 Então é possível descriptografá-lo, mas para criptografá-lo novamente e ele ser um token válido, é necessário saber a frase secreta.
 
+------------------------------------------
+
+Descriptografar o token
+
+npm install jwt-decode@2.2.0
+
