@@ -1,0 +1,19 @@
+JWT Decoder
+
+calebb.net
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6ImZsYXZpbyIsImVtYWlsIjoiZmxhdmlvQGFsdXJhcGljLmNvbS5iciIsImlhdCI6MTY0NjczNzA1NCwiZXhwIjoxNjQ2ODIzNDU0fQ.dvxYb5B2jR_hYNOdE2B6r9jtTHDRF70ioREaATPUooU
+
+{
+ alg: "HS256",
+ typ: "JWT"
+}.
+{
+ id: 1,
+ name: "flavio",
+ email: "flavio@alurapic.com.br",
+ iat: 1646737054,
+ exp: 1646823454
+}.
+[signature]
+
