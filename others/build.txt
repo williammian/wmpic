@@ -1,0 +1,10 @@
+ng build --prod
+
+app.routing.module.ts
+
+@NgModule({
+    imports: [
+        RouterModule.forRoot(routes, { useHash: true } )
+    ],
+    exports: [ RouterModule ]
+})
