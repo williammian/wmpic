@@ -1,4 +1,5 @@
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { NgModule } from "@angular/core";
 
 import { LoadButtonComponent } from './load-button/load-button.component';
@@ -22,7 +23,8 @@ import { DarkenOnHoverModule } from 'src/app/shared/directives/darken-on-hover/d
     CommonModule,
     PhotoModule,
     CardModule,
-    DarkenOnHoverModule
+    DarkenOnHoverModule,
+    RouterModule
   ]
 })
 export class PhotoListModule {}
