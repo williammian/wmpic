@@ -12,20 +12,30 @@ import { PhotoService } from "../../photo/photo.service";
 })
 export class PhotoCommentsComponent implements OnInit {
 
-    @Input() photoId: number;
-    commnetForm: FormGroup;
+  @Input() photoId: number;
+  commentForm: FormGroup;
 
-    comments$: Observable<PhotoComment[]>;
+  comments$: Observable<PhotoComment[]>;
 
-    constructor(
-      private photoService: PhotoService,
-      private formBuilder: FormBuilder
-    ) {}
+  constructor(
+    private photoService: PhotoService,
+    private formBuilder: FormBuilder
+  ) {}
 
-    ngOnInit(): void {
-        this.comments$ = this.photoService.getComments(this.photoId);
-        this.commnetForm = this.formBuilder.group({
-          comment: ['', Validators.maxLength(300)]
-        });
-    }
+  ngOnInit(): void {
+      this.comments$ = this.photoService.getComments(this.photoId);
+      this.commentForm = this.formBuilder.group({
+        comment: ['', Validators.maxLength(300)]
+      });
+  }
+
+  save() {
+    const comment = this.commentForm.get('comment').value as string;
+    this.photoService
+      .addComment(this.photoId, comment)
+      .subscribe(() => {
+        this.commentForm.reset();
+        alert('Comentário adicionado com sucesso');
+      });
+  }
 }
