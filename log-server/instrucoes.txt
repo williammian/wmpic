@@ -1,0 +1,5 @@
+Entrar na pasta log-server
+
+npm start
+
+roda na porta 7000
